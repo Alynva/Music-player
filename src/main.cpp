@@ -16,7 +16,8 @@ int main(int argc, char** argv) {
 	
 	player.play();
 	
-	while(1) player.update();
+	while(1)
+		player.update();
 	
 	return 0;
 }

@@ -6,9 +6,9 @@ CC       = gcc.exe
 WINDRES  = windres.exe
 OBJ      = main.o $(RES)
 LINKOBJ  = main.o $(RES)
-LIBS     = -L"C:/Users/Alisson Nunes/Downloads/Dev-Cpp/MinGW32/lib" -L"C:/Users/Alisson Nunes/GitHub/Music-player/lib" -static-libstdc++ -static-libgcc -L"C:/Users/Alisson Nunes/GitHub/Music-player/lib" -lmingw32 -lSDL2main -lSDL2_mixer -lSDL2  -std=c++0x 
-INCS     = -I"C:/Users/Alisson Nunes/Downloads/Dev-Cpp/MinGW32/include"  -I"C:/Users/Alisson Nunes/GitHub/Music-player/include" 
-CXXINCS  = -I"C:/Users/Alisson Nunes/Downloads/Dev-Cpp/MinGW32/include"  -I"C:/Users/Alisson Nunes/GitHub/Music-player/include"  -I"C:/Users/Alisson Nunes/GitHub/Music-player/include" 
+LIBS     = -L"C:/Users/Alisson Nunes/Downloads/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc -L"../lib" -lmingw32 -lSDL2main -lSDL2_mixer -lSDL2  -std=c++0x 
+INCS     = -I"C:/Users/Alisson Nunes/Downloads/Dev-Cpp/MinGW32/include"  -I"../include" 
+CXXINCS  = -I"C:/Users/Alisson Nunes/Downloads/Dev-Cpp/MinGW32/include"  -I"../include" 
 BIN      = ../bin/Music-player.exe
 CXXFLAGS = $(CXXINCS)   -std=c++0x
 CFLAGS   = $(INCS)    -std=c++0x
