@@ -78,6 +78,9 @@ class MusicPlayer {
 				this->play();
 			}
 		}
+		void clear() {
+			this->queue_songs.clear();
+		}
 };
 
 #endif
